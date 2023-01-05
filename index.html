@@ -13,7 +13,7 @@
             body {
                 background-color: black;
             }
-            table{
+            #tab{
                 margin-top: 50px;
                 margin-left: 252px;
                 margin-bottom: 60px;
@@ -23,6 +23,11 @@
             }
             td{
                 padding-top: 10px;
+            }
+            #controls{
+                position:absolute;
+                top: 20px;
+                left:1050px;
             }
         </style>
 
@@ -50,7 +55,7 @@
             <button style="position:relative; top:15px; left: 460px;" type="submit" onClick="refreshPage()">New Game</button>
             <h1 style="position:relative; top:20px; left: 288px; color:blanchedalmond"> Kombat of Kings</h1>
             <div>
-                <table>
+                <table id="tab">
                     <tr id="charTitle">
                         <th style="padding-right: 70px;color:#ef4444; font-size: large;"> King Arthur </th>
                         <th style="color:#3b82f6; font-size: large;;"> King Charles </th>
@@ -67,8 +72,31 @@
                         <td style="color:blanchedalmond; padding-right: 70px; padding-bottom:20px;"> Slower Attack </td>
                         <td style="color:blanchedalmond; padding-bottom:20px;"> Faster Attack </td>                    
                     </tr>
+
                     <tr class="cl">
                         <td colspan="2" style="color:blanchedalmond; padding: 20px; border: solid white 1px;"> Developed By <a href="http://mobenl.com/" target="_blank" style="text-decoration:none;"> Mohammed Benloucif </a> </td>
+                    </tr>
+                </table>
+                <table id="controls">
+                    <tr id="charTitle">
+                        <th style="padding-right: 50px; color:#ef4444; font-size: large;"> King Arthur </th>
+                        <th style="color:#3b82f6; font-size: large;;"> King Charles </th>
+                    </tr>
+                    <tr class="cl">
+                        <td style="color:blanchedalmond; padding-right: 25px;"> <img src="./img/wKey.png" alt="" height=40 width=40></img> <p>Up</p> </td>
+                        <td style="color:blanchedalmond; padding-right: 25px;"> <img src="./img/upArrow.png" alt="" height=40 width=40></img> <p>Up</p> </td>
+                    </tr>
+                    <tr class="cl">
+                        <td style="color:blanchedalmond; padding-right: 25px;"> <img src="./img/aKey.png" alt="" height=40 width=40></img> <p>Left</p> </td>
+                        <td style="color:blanchedalmond; padding-right: 25px;"> <img src="./img/leftKey.png" alt="" height=40 width=40></img> <p>Left</p> </td>                        
+                    </tr>
+                    <tr class="cl">
+                        <td style="color:blanchedalmond; padding-right: 25px;"> <img src="./img/dKey.png" alt="" height=40 width=40></img> <p>Right</p> </td>
+                        <td style="color:blanchedalmond; padding-right: 25px;"> <img src="./img/rightKey.png" alt="" height=40 width=40></img> <p>Right</p> </td>
+                    </tr>
+                    <tr class="cl">
+                        <td style="color:blanchedalmond; padding-right: 25px;"> <img src="./img/spaceBar.png" alt="" height=40 width=200></img> <p>Attack</p> </td>
+                        <td style="color:blanchedalmond; padding-right: 25px;"> <img src="./img/downKey.png" alt="" height=40 width=40></img> <p>Attack</p> </td>
                     </tr>
                 </table>
             </div>
