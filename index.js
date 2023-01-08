@@ -15,7 +15,7 @@ const background = new Sprite({
     },
     imageSrc: './img/background.png'
 })
-
+//King Arthur player object
 const player = new Fighter({
     position: {
         x: 0,
@@ -75,7 +75,7 @@ const player = new Fighter({
         height: 100
     }
 })
-
+//King Charles player object
 const enemy = new Fighter({
     position: {
         x: 400,
@@ -271,6 +271,17 @@ window.addEventListener('keydown', (event) => {
             case 'w':
                 player.velocity.y = -20
                 break
+            case 'D':
+                keys.d.pressed = true
+                player.lastKey = 'd'
+                break
+            case 'A':
+                keys.a.pressed = true
+                player.lastKey = 'a'
+                break
+            case 'W':
+                player.velocity.y = -20
+                break
             case ' ':
                 player.attack()
                 break
@@ -306,6 +317,12 @@ window.addEventListener('keyup', (event) => {
             keys.d.pressed = false
             break
         case 'a':
+            keys.a.pressed = false
+            break
+        case 'D':
+            keys.d.pressed = false
+            break
+        case 'A':
             keys.a.pressed = false
             break
     }
